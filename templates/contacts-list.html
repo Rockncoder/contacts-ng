@@ -1,0 +1,15 @@
+<div>
+    <div class="row">
+        <aside class="col-lg-3">
+            <ul class="list-group">
+                <li ng-repeat="contact in contacts" class="list-group-item">
+                    <button type="button" class="btn btn-danger " ng-click="delete($index)"><span
+                            class="glyphicon glyphicon-minus"></span></button>
+                    <a ng-href="#/contacts/{{$index}}" ng-click="select($index)">
+                        <span ng-bind="contact.firstName"></span>&nbsp;<span ng-bind="contact.lastName"></span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+</div>
